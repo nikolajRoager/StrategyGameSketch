@@ -37,7 +37,6 @@
                 <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Background="LightBlue">
                     
                 </Grid>
-                
             </Grid>
         </TabItem>
     </TabControl>
