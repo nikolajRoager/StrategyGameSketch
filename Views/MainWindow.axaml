@@ -14,7 +14,31 @@
              to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <vm:MainWindowViewModel/>
     </Design.DataContext>
-
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
+    <TabControl Margin="5">
+        <TabItem Header="Map">
+            <Grid Grid.Row="0" Background="Gray">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="250"/>
+                </Grid.RowDefinitions>
+            
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="600"/>
+                </Grid.ColumnDefinitions>
+                <Viewbox Grid.Row="0" Grid.Column="0" Stretch="Uniform">
+                    <Grid Width="250" Height="180" Background="Black">
+                        <Panel Background="AliceBlue"/>
+                    </Grid>
+                </Viewbox>
+                <Grid Grid.Row="0" Grid.Column="1" Background="AntiqueWhite">
+                    
+                </Grid>
+                <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Background="LightBlue">
+                    
+                </Grid>
+                
+            </Grid>
+        </TabItem>
+    </TabControl>
 </Window>
