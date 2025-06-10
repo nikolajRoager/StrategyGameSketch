@@ -1,6 +1,18 @@
-﻿namespace StrategyGameSketch.ViewModels;
+﻿using Avalonia.Media.Imaging;
+using StrategyGameSketch.Models;
+
+namespace StrategyGameSketch.ViewModels;
 
 public partial class MainWindowViewModel : ViewModelBase
 {
-    public string Greeting { get; } = "Welcome to Avalonia!";
+    private Map _map=new();
+
+    public Bitmap MapBitmap
+    {
+        get
+        {
+            var pngStream = _map.AsPngImage(); 
+            return new Bitmap(pngStream);
+        }
+    }
 }

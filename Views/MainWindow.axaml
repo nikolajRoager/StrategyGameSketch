@@ -28,7 +28,7 @@
                 </Grid.ColumnDefinitions>
                 <Viewbox Grid.Row="0" Grid.Column="0" Stretch="Uniform">
                     <Grid Width="250" Height="180" Background="Black">
-                        <Panel Background="AliceBlue"/>
+                        <Image Source="{Binding MapBitmap}"></Image>
                     </Grid>
                 </Viewbox>
                 <Grid Grid.Row="0" Grid.Column="1" Background="AntiqueWhite">

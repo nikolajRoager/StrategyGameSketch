@@ -28,7 +28,7 @@ public class Map
         }
 
         var imageStream = new MemoryStream();
-        bitmap.Encode(imageStream, SKEncodedImageFormat.Png, 100);
+        bitmap.Encode(imageStream, SKEncodedImageFormat.Png, 50);
         imageStream.Position = 0;
         
         return imageStream;
